@@ -1,0 +1,206 @@
+/*Styling for property*/
+body {
+    padding-top: 50px;
+}
+div.container{
+    background-color: whitesmoke;
+}
+div.main{
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-bottom: 6%;
+}
+div.formbox{
+    background-color:white;
+    padding-left: 20px;
+    width:800px;
+}
+
+p.form{
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.typeprice {
+    width: 50%;
+    float:left;
+    
+}
+.rooms{
+    width: 50%;
+    float:left;
+    margin-bottom: 0px; 
+}
+#submitbtn{
+    
+    background-color: blue; 
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+#photo{
+    display: inline-block;
+    padding-bottom: 13px;
+}
+
+#propertyname,#descrip{
+    width: 78%;
+}
+
+#numroom, #numbathroom, #proptype{
+    width: 55%;
+}
+
+/*Styling for properties*/
+
+div.main2{
+    background-color:whitesmoke;
+}
+
+div.gridcontainer {
+    display: grid;
+    grid-gap: 10px;
+    background-color:whitesmoke;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+  }
+  
+div.gridcontainer > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0; 
+  }
+
+div.card{
+    width: 85%;
+    height:89%;
+  }
+div.info{
+    padding-left: 12px;
+}
+p.propertytitle{
+    text-align: center;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+p.propertylocation{
+    text-align: left;
+    margin: 0px;
+    font-size: 13px;
+    padding-bottom: 6px;
+  }
+
+div.pricebox{
+    background-color:rgb(67, 67, 238);
+    color: white;
+    border-radius: 8px;
+    padding:5px;
+    text-align: left;
+    width:70px;
+    font-size: 10px;
+    height:20px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+img.icon{
+    width:10px;
+    height:13px;
+}
+
+button.btn{
+    background-color: teal;
+    color: white;
+    font-size: 10px;
+    padding: 15px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    width:100%;
+}
+
+
+/*Styling for property view*/
+div.gridcontainer2 {
+    display: grid;
+    background-color:yellow;
+    padding: 10px;
+    margin:auto;
+    width:100%;
+    grid-template-columns: auto auto;
+    height:100%;
+  }
+  div.pic{
+    width:50%;
+    height:50%;
+    background-color: red;
+    float:left;
+}
+div.data{
+    width:50%;
+    height:50%;
+    background-color: white;
+    float:left;
+}
+
+  div.title1{
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 15px;
+  }
+  div.price2{
+    background-color:rgb(67, 67, 238);
+    color: white;
+    border-radius: 8px;
+    padding:5px;
+    width:70px;
+    font-size: 10px;
+    height:20px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    float:left;
+  }
+div.type{
+    margin-left: 10px;
+    float:left;
+    background-color:gold;
+    color: white;
+    border-radius: 8px;
+    padding:5px;
+    text-align: center;
+    width:70px;
+    font-size: 10px;
+    height:20px;
+    display: block;
+    margin-bottom: 15px;
+}
+img.icon1, img.icon2{
+    width:10px;
+    height:13px;
+}
+button.emailbtn{
+    background-color: teal;
+    color: white;
+    font-size: 10px;
+    padding: 6px;
+    width:100px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px; 
+}
+div.emailbtn{
+    margin:0;
+}

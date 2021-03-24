@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %} 
+
+{%block main%}
+<div class="main3">
+    <div class="gridcontainer2">   
+            {% for propinfo in propinfo %}
+            <div class="pic"><img src=" {{url_for('get_images', filename=image)}} " ></div>
+            <div class ="data">
+                <div class ="title1">{{propinfo[1]}}</div>
+                <div class ="price2">{{ propinfo[5]}}</div>
+                <div class = "type">{{ propinfo[6]}}</div>
+                <div class = "des"><p>{{ propinfo[7]}}</p></div>
+                
+                <p class="bedandbath"><img class = "icon1" src="../static/css/bed.png" alt="bedroom icon"> {{ propinfo[2]}} <img class = "icon2" src="../static/css/bath.jpg" alt="bathroom icon"> {{ propinfo[3]}} </p>
+
+                <p class="propertylocation"><img class = "icon" src="../static/css/location.png" alt="location icon"> {{ propinfo[4]}}</p>
+
+                <div class = "emailbtn"><button class="emailbtn" type="button">Email Realtor</button></div>
+            {%endfor%}
+        
+    </div>
+        
+</div>    
+    </div>
+</div>
+
+{% endblock %}

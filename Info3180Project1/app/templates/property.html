@@ -1,0 +1,49 @@
+
+{% extends 'base.html' %} 
+
+{%block main%}
+<div class="main">
+    <h1>Add New Property</h1>
+    <div class = "formbox">
+        <fieldset  class="form-field">
+            <form action="{{ url_for('Property') }}" method="POST" enctype="multipart/form-data">
+                {{ form.csrf_token }}
+                <div class ="title">
+                    <p class = "form">{{ form.propertyname.label }} </p>
+                    {{ form.propertyname(size=20) }}
+                </div>
+
+                <div class = "desc">
+                    <p class = "form">{{ form.descrip.label }} </p>
+                    {{ form.descrip }}
+                
+                </div>
+
+                <ul class = "rooms">
+                     <li><b>{{form.numroom.label}}</b></li>
+                     <li>{{form.numroom(size=10)}}</li>
+                     <li><b>{{ form.price.label }}</b></li>
+                     <li>{{form.price}}</li>          
+                </ul>
+                
+                <ul class = "typeprice">
+                    <li><b>{{form.numbathroom.label}}</b></li>
+                    <li>{{form.numbathroom}}</li>
+                    <li><b>{{ form.proptype.label }}</b></li>
+                    <li>{{ form.proptype }}</li>    
+                </ul>
+
+                <p class = "form">{{ form.address.label }} </p>
+                {{ form.address }}
+
+                <div class = "photo">
+                    <p class = "form">{{ form.photo.label }} </p>
+                    {{ form.photo }}
+                </div>
+                <div class = "button">{{form.submitbtn }} </div>
+           </fieldset>    
+        </form>
+    </div>
+</div>
+
+{% endblock %}

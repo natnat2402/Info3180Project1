@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %} 
+
+{%block main%}
+<div class="main2">
+    <h1>Properties</h1>
+    <div class="gridcontainer">
+        {% for imagename in imagenames %}
+            <img src=" {{url_for('get_images', filename=imagename)}} " >
+        {% endfor%}
+        {% for property in propertyinfo %}
+        <div class = 'card'>
+            <div class="info">
+                <p class="propertytitle">{{property[1]}}</p>
+                <p class="propertylocation"><img class = "icon" src="../static/css/location.png" alt="location icon"> {{property[4]}}</p>
+                <div class="pricebox"><p class="propertyprice">{{property[5]}}</p></div>
+            </div>
+            <form action="{{ url_for('Property', Property_id='{{property[0]}}' ) }}" method="GET">
+                <input type ="hidden" name="Property_id" value ={{property[0]}}>
+                
+                <button class="btn" type ="submit">View Property</button>
+            </form>
+            </div>
+
+        {% endfor %}
+        
+    </div>
+</div>
+
+{% endblock %}
